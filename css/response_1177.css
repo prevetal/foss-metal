@@ -1,0 +1,589 @@
+@media (max-width: 1177px)
+{
+    /*---------------
+        Main styles
+    ---------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 30px;
+    }
+
+
+    .block_head .title,
+    .page_title
+    {
+        line-height: 34px;
+    }
+
+    .block_head .desc
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+
+    .text_block h1
+    {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .text_block .cols > *
+    {
+        width: calc(50% - 10px);
+    }
+
+    .text_block .cols > *.bg
+    {
+        padding: 25px;
+    }
+
+
+
+    .content_flex .content
+    {
+        width: calc(100% - var(--aside_width) - 30px);
+    }
+
+    .category_info.content_flex .content
+    {
+        width: calc(100% - var(--aside_width) - 20px);
+    }
+
+
+
+    /*---------------
+        Header
+    ---------------*/
+    header .cont
+    {
+        padding: 0;
+    }
+
+    header .info .cont > *
+    {
+        padding: 11px 20px;
+    }
+
+
+    header .logo
+    {
+        width: 278px;
+        min-width: 278px;
+        padding-left: 15px !important;
+    }
+
+    header .logo .part1
+    {
+        width: 113px;
+    }
+
+    header .logo .part2
+    {
+        width: calc(100% - 118px);
+    }
+
+
+    header .phones .summary
+    {
+        padding: 0;
+    }
+
+
+    header .contacts
+    {
+        width: auto;
+        padding: 11px 20px !important;
+    }
+
+
+    header .socials
+    {
+        padding: 0;
+    }
+
+    header .socials a + a
+    {
+        margin-left: 15px;
+    }
+
+
+
+    header .order_link
+    {
+        padding: 11px 20px !important;
+    }
+
+
+
+    #catalog_modal
+    {
+        left: 0;
+
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+
+
+    header .menu
+    {
+        padding: 0 20px;
+    }
+
+    header .menu .item > a
+    {
+        padding: 0;
+    }
+
+    header .menu .item:hover > a,
+    header .menu .item > a.active
+    {
+        background: none;
+    }
+
+
+
+    /*---------------
+        Sidebar
+    ---------------*/
+
+
+
+    /*---------------
+        Main section
+    ---------------*/
+    .main_slider .slide .cont
+    {
+        min-height: 450px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .main_slider .slide .info
+    {
+        padding-left: 150px;
+    }
+
+    .main_slider .slide .title
+    {
+        font-size: 34px;
+        line-height: 44px;
+    }
+
+    .main_slider .slide .link
+    {
+        margin-top: 40px;
+    }
+
+
+    .main_slider .owl-carousel .owl-nav button
+    {
+        top: 60px;
+    }
+
+    .main_slider .owl-carousel .owl-nav button.owl-prev
+    {
+        left: 20px;
+
+        margin-left: 0;
+    }
+
+    .owl-carousel .owl-nav button.owl-next
+    {
+        left: 80px;
+
+        margin-left: 0;
+    }
+
+
+    .main_slider .garanti
+    {
+        top: 60px;
+        right: 20px;
+
+        margin-right: 0;
+    }
+
+    .main_slider .garanti .title
+    {
+        font-size: 24px;
+    }
+
+
+
+    .main_slider + .cats_wall
+    {
+        margin-top: 0;
+    }
+
+    .cats_wall .data
+    {
+        padding-top: 60px;
+    }
+
+    .cats_wall .cat
+    {
+        padding: 0 20px 20px;
+    }
+
+    .cats_wall .cat .main
+    {
+        font-size: 18px;
+    }
+
+
+
+    .cats_list .cat
+    {
+        line-height: 23px;
+    }
+
+    .cats_list .cat .info
+    {
+        padding: 15px 20px 20px;
+    }
+
+    .cats_list .cat .name
+    {
+        font-size: 17px;
+    }
+
+
+
+    .advantages .item
+    {
+        font-size: 17px;
+
+        padding: 10px 25px;
+    }
+
+
+
+    .about .text_block
+    {
+        width: calc(100% - 300px);
+    }
+
+
+    .about .links > * + *
+    {
+        margin-top: 15px;
+    }
+
+    .about .links a
+    {
+        font-size: 18px;
+    }
+
+    .about .links a:before
+    {
+        top: 10px;
+    }
+
+
+
+    .articles .flex
+    {
+        margin-bottom: -40px;
+        margin-left: -20px;
+    }
+
+    .articles .flex > *
+    {
+        width: calc(33.333% - 20px);
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+
+
+    .articles .list .article .info
+    {
+        width: calc(100% - 320px);
+    }
+
+    .articles .list .article .info > * + *
+    {
+        margin-top: 10px;
+    }
+
+
+    .articles .article .name
+    {
+        font-size: 18px;
+    }
+
+    .articles .article
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+    .articles .owl-carousel .owl-nav button
+    {
+        top: 100px;
+
+        margin-top: 0;
+    }
+
+    .articles .owl-carousel .owl-nav button.owl-prev
+    {
+        left: -195px;
+    }
+
+    .articles .owl-carousel .owl-nav button.owl-next
+    {
+        right: auto;
+        left: -145px;
+    }
+
+
+
+    .order_block .block_head
+    {
+        width: 265px;
+    }
+
+    .order_block .form
+    {
+        width: calc(100% - 295px);
+    }
+
+
+
+    .about_page
+    {
+        --aside_width: 320px;
+    }
+
+
+    .about_page .production:before
+    {
+        right: 120px;
+        left: auto;
+
+        margin-left: 0;
+    }
+
+
+
+    .subscribe .block_head
+    {
+        width: 385px;
+        max-width: 100%;
+    }
+
+    .subscribe .form
+    {
+        width: 550px;
+        max-width: 100%;
+    }
+
+    .subscribe .form .line
+    {
+        width: calc(100% - 190px);
+    }
+
+    .subscribe .form .submit
+    {
+        width: 190px;
+    }
+
+    .subscribe .form .submit_btn
+    {
+        font-size: 17px;
+    }
+
+
+
+    .checout_success .text_block
+    {
+        padding: 25px 30px;
+    }
+
+
+
+    .contacts_info .block + .block
+    {
+        margin-top: 70px;
+    }
+
+    .contacts_info .info
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .contacts_info .info > * + *,
+    .contacts_info .info .warning
+    {
+        margin-top: 20px;
+    }
+
+    .contacts_info .info .requisites,
+    .contacts_info .info .reachable
+    {
+        margin-top: 30px;
+    }
+
+    .contacts_info .info .phone
+    {
+        font-size: 16px;
+    }
+
+
+
+    .documents .flex
+    {
+        margin-left: -30px;
+    }
+
+    .documents .flex > *
+    {
+        width: calc(50% - 30px);
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+
+
+    .checkout .block
+    {
+        padding-left: 65px;
+    }
+
+    .checkout .block_title:before
+    {
+        left: -65px;
+    }
+
+
+
+    .sorting
+    {
+        margin-bottom: 25px;
+    }
+
+    .sorting.bottom
+    {
+        margin-top: 25px;
+    }
+
+
+
+    .content .products table th
+    {
+        font-size: 12px;
+
+        padding: 10px;
+    }
+
+    .content .products table td
+    {
+        padding: 18px 10px;
+    }
+
+    .content .products table td.name
+    {
+        font-size: 13px;
+    }
+
+    .content .products table td.name a
+    {
+        width: 149px;
+    }
+
+    .content .products table td.weight
+    {
+        font-size: 13px;
+    }
+
+    .content .products table td.city
+    {
+        font-size: 14px;
+    }
+
+    .content .products table td.city span
+    {
+        font-size: 12px;
+    }
+
+    .content .products table td.amount
+    {
+        width: 103px;
+        min-width: 103px;
+    }
+
+    .content .products table td.buy
+    {
+        width: 80px;
+        min-width: 80px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+
+    /*---------------
+        Footer
+    ---------------*/
+    footer .col_left
+    {
+        width: 225px;
+        min-width: 225px;
+    }
+
+    footer .col_center
+    {
+        padding: 20px;
+    }
+
+    footer .col_right
+    {
+        width: 340px;
+        min-width: 340px;
+    }
+
+
+    footer .info .col_right .flex,
+    footer .socials
+    {
+        padding: 25px 0 25px 20px;
+    }
+
+
+    footer .contacts
+    {
+        padding: 20px 20px 20px 0;
+    }
+
+    footer .contacts .phone
+    {
+        font-size: 18px;
+    }
+
+
+    footer .bottom .col_left
+    {
+        padding-right: 20px;
+    }
+
+    footer .bottom .col_center
+    {
+        padding: 15px 20px 10px;
+    }
+
+    footer .bottom .col_right
+    {
+        padding-left: 20px;
+    }
+
+
+
+    /*---------------
+        PopUp
+    ---------------*/
+}

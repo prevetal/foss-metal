@@ -1,0 +1,324 @@
+@media (max-width: 374px)
+{
+    /*---------------
+        Main styles
+    ---------------*/
+    :root
+    {
+        --font_size_title: 22px;
+    }
+
+
+    .block_head .title,
+    .page_title
+    {
+        line-height: 26px;
+    }
+
+
+
+    .text_block h1
+    {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .text_block h2
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .text_block h3
+    {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    .text_block h4
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .text_block h5
+    {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .text_block h6
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+    .text_block blockquote,
+    .text_block q
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        width: calc(100% + 30px);
+        margin-right: -15px;
+        margin-left: -15px;
+        padding: 20px 15px;
+    }
+
+
+    .text_block .cols > *.bg
+    {
+        width: calc(100% + 30px);
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+
+
+    .form .columns > *.width1of4
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+
+    /*---------------
+        Header
+    ---------------*/
+    .mob_header .logo a
+    {
+        font-size: 9px;
+    }
+
+    .mob_header .logo .part1
+    {
+        width: 90px;
+    }
+
+    .mob_header .logo .part2
+    {
+        width: 115px;
+        margin-left: 10px;
+    }
+
+    .mob_header .logo .part2 img
+    {
+        height: 14px;
+    }
+
+
+    .mob_header .mob_menu_link
+    {
+        width: 60px;
+        padding: 15px;
+    }
+
+
+
+    /*---------------
+        Sidebar
+    ---------------*/
+    aside .download a
+    {
+        font-size: 14px;
+    }
+
+
+
+    /*---------------
+        Main section
+    ---------------*/
+    .main_slider .slide .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    .main_slider .garanti .item
+    {
+        min-height: 125px;
+        padding: 15px 98px 52px 15px;
+    }
+
+    .main_slider .garanti .title
+    {
+        font-size: 16px;
+    }
+
+    .main_slider .garanti img
+    {
+        top: 15px;
+        right: 20px;
+    }
+
+    .main_slider .garanti .desc
+    {
+        font-size: 13px;
+    }
+
+
+
+    .cats_wall .block_title
+    {
+        font-size: 22px;
+        line-height: 26px;
+
+        margin-bottom: 20px;
+    }
+
+
+
+    .advantages .item
+    {
+        font-size: 14px;
+    }
+
+
+
+    .about .links
+    {
+        column-count: 1;
+    }
+
+
+
+    .articles .flex
+    {
+        --articles_count: 1;
+    }
+
+    .articles .flex > *
+    {
+        width: calc(100% - 15px);
+    }
+
+
+
+    .checout_success .text_block
+    {
+        font-size: 13px;
+        line-height: 21px;
+    }
+
+
+
+    .contacts_info .info
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .contacts_info .info .requisites a
+    {
+        line-height: 22px;
+    }
+
+    .contacts_info .info > * + *,
+    .contacts_info .info .warning
+    {
+        margin-top: 15px;
+    }
+
+    .contacts_info .info .phone,
+    .contacts_info .info .adres,
+    .contacts_info .info .time,
+    .contacts_info .info .email,
+    .contacts_info .info .reachable,
+    .contacts_info .info .requisites,
+    .contacts_info .info .warning
+    {
+        padding-left: 27px;
+    }
+
+    .contacts_info .map .adres
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .contacts_info .info .requisites
+    {
+        background-position: 2px 2px;
+    }
+
+    .contacts_info .info .reachable
+    {
+        background-position: 1px 2px;
+    }
+
+
+
+    .documents .title
+    {
+        font-size: 17px;
+
+        margin-bottom: 18px;
+    }
+
+
+
+    .accordion .item .title
+    {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+
+    .checkout .block_title
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+
+    .cart_info table td.price,
+    .cart_info table td.price.total
+    {
+        margin-left: 60px;
+    }
+
+
+
+    .products table td.price,
+    .products table td.weight
+    {
+        margin-left: 60px;
+    }
+
+    .products table td.price,
+    .products table td.weight,
+    .products table td.city
+    {
+        width: calc(50% - 30px);
+    }
+
+
+
+    /*---------------
+        Footer
+    ---------------*/
+    footer .info .col_right .flex > *
+    {
+        width: calc(50% - 10px);
+        min-width: 0;
+    }
+
+
+
+    /*---------------
+        PopUp
+    ---------------*/
+    .modal
+    {
+        padding: 40px 20px 20px;
+    }
+
+    .modal_title
+    {
+        font-size: 19px;
+    }
+}
