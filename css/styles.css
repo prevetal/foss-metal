@@ -325,6 +325,14 @@ body.lock
     font-size: var(--font_size_title);
     font-weight: 700;
     line-height: 38px;
+
+    display: block;
+}
+
+.page_title.mini
+{
+    width: 984px;
+    max-width: 100%;
 }
 
 
@@ -835,7 +843,7 @@ body.lock
     font-weight: 700;
     line-height: 34px;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .text_block h1 + h2
@@ -850,7 +858,7 @@ body.lock
     font-weight: 700;
     line-height: 30px;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .text_block h1 + h3,
@@ -920,7 +928,7 @@ body.lock
 .text_block * + h5,
 .text_block * + h6
 {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .text_block .clear + h2,
@@ -1104,12 +1112,12 @@ body.lock
 
 .text_block .cols > *
 {
-    width: calc(50% - 15px);
+    width: calc(50% - 14px);
 }
 
 .text_block .cols > *.bg
 {
-    padding: 35px 30px;
+    padding: 20px 30px;
 
     background: #f1f1f1;
 }
@@ -3981,6 +3989,7 @@ aside .filter .reset_btn
     margin-bottom: 0 !important;
 }
 
+
 .documents .title
 {
     font-size: 20px;
@@ -3988,6 +3997,17 @@ aside .filter .reset_btn
 
     margin-bottom: 25px;
 }
+
+
+.documents .block_title
+{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: calc(100% + 6px);
+
+    margin-bottom: 29px;
+}
+
 
 .documents .flex
 {
@@ -4001,6 +4021,13 @@ aside .filter .reset_btn
     margin-bottom: 30px;
     margin-left: 70px;
 }
+
+
+.documents .list > * + *
+{
+    margin-top: 20px;
+}
+
 
 .documents .file
 {
@@ -4063,6 +4090,101 @@ aside .filter .reset_btn
     color: #005ab1;
 }
 
+
+
+.products .block_title
+{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: calc(100% + 6px);
+
+    margin-bottom: 27px;
+}
+
+
+.products .slider
+{
+    padding-bottom: 68px;
+}
+
+
+.products .owl-carousel .owl-nav button.owl-prev,
+.products .owl-carousel .owl-nav button.owl-next
+{
+    top: auto;
+    bottom: 0;
+
+    border-color: #d9d9d9;
+}
+
+.products .owl-carousel .owl-nav button.owl-prev
+{
+    left: 0;
+
+    margin-left: 0;
+}
+
+.products .owl-carousel .owl-nav button.owl-next
+{
+    right: 0;
+    left: auto;
+
+    margin-left: 0;
+}
+
+
+.products .owl-carousel .owl-nav button svg,
+.products .owl-carousel .owl-nav button svg
+{
+    transition: fill .2s linear;
+
+    fill: #0a4781;
+}
+
+
+.products .owl-carousel .owl-nav button:hover
+{
+    border-color: transparent;
+    background-color: rgba(10,71,129,.85);
+}
+
+.products .owl-carousel .owl-nav button:hover svg,
+.products .owl-carousel .owl-nav button:hover svg
+{
+    fill: #fff;
+}
+
+
+.products .owl-dots
+{
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+
+    margin: 0;
+
+    transform: translateX(-50%);
+}
+
+
+.products .owl-dots .owl-dot
+{
+    width: 10px;
+    height: 10px;
+
+    opacity: 1;
+    background: #d9d9d9;
+}
+
+.products .owl-dots .owl-dot + .owl-dot
+{
+    margin-left: 16px;
+}
+
+.products .owl-dots .owl-dot.active
+{
+    background: #0a4781;
+}
 
 
 .products table
@@ -4396,6 +4518,195 @@ aside .filter .reset_btn
 .content .products table td.buy
 {
     width: 141px;
+}
+
+
+
+.products .product .thumb
+{
+    color: currentColor;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin-bottom: 13px;
+    padding-bottom: 80.995%;
+
+    text-decoration: none;
+
+    background: #ddd;
+}
+
+.products .product .thumb img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.products .product .name
+{
+    color: #0a4781;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.products .product .name a
+{
+    color: currentColor;
+
+    display: inline-block;
+
+    vertical-align: top;
+    text-decoration: none;
+}
+
+
+.products .product .price
+{
+    font-size: 17px;
+    font-weight: 700;
+
+    margin-top: 20px;
+}
+
+
+.products .product .amount
+{
+    position: relative;
+
+    display: flex;
+
+    margin-top: 20px;
+
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.products .product .amount .input
+{
+    color: var(--text_color);
+    font-family: var(--font_family);
+    font-size: 13px;
+
+    display: block;
+
+    width: 100%;
+    height: 40px;
+    padding: 0 27px;
+
+    text-align: center;
+
+    border: 1px solid #d1d1d1;
+    background: #fff;
+}
+
+.products .product .amount button
+{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+
+    display: block;
+
+    width: 19px;
+    height: 19px;
+    margin-top: -10px;
+
+    cursor: pointer;
+    transition: .2s linear;
+
+    border: 2px solid #0a4781;
+    border-radius: 3px;
+    background: none;
+}
+
+.products .product .amount button:before,
+.products .product .amount button:after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 9px;
+    height: 1px;
+    margin: auto;
+
+    content: '';
+    transition: .2s linear;
+
+    background: #0a4781;
+}
+
+.products .product .amount button.plus:after
+{
+    width: 1px;
+    height: 9px;
+}
+
+.products .product .amount button.plus
+{
+    right: 5px;
+    left: auto;
+}
+
+.products .product .amount button.minus:hover
+{
+    border-color: #f24841;
+}
+
+.products .product .amount button.plus:hover
+{
+    border-color: #009687;
+}
+
+.products .product .amount button.minus:hover:before,
+.products .product .amount button.minus:hover:after
+{
+    background: #f24841;
+}
+
+.products .product .amount button.plus:hover:before,
+.products .product .amount button.plus:hover:after
+{
+    background: #009687;
+}
+
+
+.products .product .buy_btn
+{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+
+    display: block;
+
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+
+    cursor: pointer;
+    text-align: center;
+
+    border: none;
+    background: #0a4781;
 }
 
 
@@ -5660,6 +5971,463 @@ aside .filter .reset_btn
 .more button.active .icon
 {
     transform: rotate(-180deg);
+}
+
+
+
+/*-----------------
+   Product info
+-----------------*/
+.product_info .image
+{
+    width: 585px;
+    max-width: calc(50% + 15px);
+}
+
+
+.product_info .image div
+{
+    color: currentColor;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-bottom: 81.538%;
+
+    text-decoration: none;
+
+    background: #ddd;
+}
+
+
+.product_info .image img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.product_info .data
+{
+    width: 520px;
+    max-width: calc(50% - 45px);
+    margin-left: auto;
+}
+
+
+.product_info .info
+{
+    display: flex;
+
+    padding: 12px 46px 21px 17px;
+
+    border: 1px solid #f0f0f0;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.product_info .price
+{
+    color: #fff;
+
+    min-width: 154px;
+    padding: 9px 19px 12px 11px;
+
+    background: #003160;
+}
+
+
+.product_info .price .label
+{
+    font-size: 15px;
+    line-height: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+.product_info .price .val
+{
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 22px;
+
+    white-space: nowrap;
+}
+
+
+.product_info .warehouse
+{
+    color: #fff;
+
+    min-width: 154px;
+    margin-left: auto;
+    padding: 9px 19px 12px 11px;
+
+    background: #ada380;
+}
+
+
+.product_info .warehouse .label
+{
+    font-size: 15px;
+    line-height: 14px;
+
+    margin-bottom: 8px;
+}
+
+
+.product_info .warehouse .val
+{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+
+    white-space: nowrap;
+}
+
+
+.product_info .buy
+{
+    display: flex;
+
+    width: 100%;
+    margin-top: 22px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.product_info .features
+{
+    line-height: 14px;
+
+    width: 100%;
+    margin-top: 17px;
+}
+
+
+.product_info .features > *
+{
+    display: flex;
+
+    white-space: nowrap;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.product_info .features > * + *
+{
+    margin-top: 16px;
+}
+
+
+.product_info .features .dottes
+{
+    width: 100%;
+    margin-bottom: 3px;
+
+    opacity: .5;
+    border-bottom: 1px dotted;
+
+    align-self: flex-end;
+}
+
+
+.product_info .features .label
+{
+    padding-right: 4px;
+
+    opacity: .5;
+}
+
+
+.product_info .features .val
+{
+    padding-left: 4px;
+}
+
+
+.product_info .buy .amount
+{
+    position: relative;
+
+    display: flex;
+
+    width: 127px;
+
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.product_info .buy .amount .input
+{
+    color: var(--text_color);
+    font-family: var(--font_family);
+    font-size: 13px;
+
+    display: block;
+
+    width: 100%;
+    height: 53px;
+    padding: 0 45px;
+
+    text-align: center;
+
+    border: 1px solid #d1d1d1;
+    background: #fff;
+}
+
+.product_info .buy .amount button
+{
+    position: absolute;
+    top: 50%;
+    left: 21px;
+
+    display: block;
+
+    width: 19px;
+    height: 19px;
+    margin-top: -10px;
+
+    cursor: pointer;
+    transition: .2s linear;
+
+    border: 2px solid #0a4781;
+    border-radius: 3px;
+    background: none;
+}
+
+.product_info .buy .amount button:before,
+.product_info .buy .amount button:after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 9px;
+    height: 1px;
+    margin: auto;
+
+    content: '';
+    transition: .2s linear;
+
+    background: #0a4781;
+}
+
+.product_info .buy .amount button.plus:after
+{
+    width: 1px;
+    height: 9px;
+}
+
+.product_info .buy .amount button.plus
+{
+    right: 21px;
+    left: auto;
+}
+
+.product_info .buy .amount button.minus:hover
+{
+    border-color: #f24841;
+}
+
+.product_info .buy .amount button.plus:hover
+{
+    border-color: #009687;
+}
+
+.product_info .buy .amount button.minus:hover:before,
+.product_info .buy .amount button.minus:hover:after
+{
+    background: #f24841;
+}
+
+.product_info .buy .amount button.plus:hover:before,
+.product_info .buy .amount button.plus:hover:after
+{
+    background: #009687;
+}
+
+
+.product_info .buy .buy_btn
+{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 40px;
+
+    display: block;
+
+    width: 205px;
+    max-width: 100%;
+    height: 52px;
+    margin-left: 8px;
+
+    cursor: pointer;
+    text-align: center;
+
+    border: none;
+    background: #0a4781;
+}
+
+
+.product_info .notice
+{
+    font-size: 12px;
+    line-height: 16px;
+
+    display: flex;
+
+    margin-top: 11px;
+    padding: 15px 20px 15px 16px;
+
+    background: #f0f0f0;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.product_info .notice .icon
+{
+    display: block;
+
+    width: 24px;
+    height: 24px;
+}
+
+.product_info .notice .icon + *
+{
+    width: calc(100% - 37px);
+    margin-left: auto;
+
+    align-self: center;
+}
+
+
+
+/*------------------------
+   Product description
+------------------------*/
+.product_description .block_title
+{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: calc(100% + 6px);
+
+    margin-bottom: 16px;
+}
+
+
+
+/*----------------------------
+   Benefits of cooperation
+----------------------------*/
+.benefits_cooperation .block_title
+{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: calc(100% + 6px);
+
+    margin-bottom: 22px;
+}
+
+
+.benefits_cooperation .flex
+{
+    padding-bottom: 1px;
+    padding-left: 1px;
+
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.benefits_cooperation .flex > *
+{
+    width: calc(33.333% + 1px);
+    margin-bottom: -1px;
+    margin-left: -1px;
+}
+
+
+.benefits_cooperation .item
+{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(100% + 6px);
+
+    display: flex;
+
+    padding: 26px 37px 27px;
+
+    border: 1px solid #f0f0f0;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.benefits_cooperation .item .icon
+{
+    display: flex;
+
+    width: 47px;
+    height: 47px;
+
+    background: #003569;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.benefits_cooperation .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.benefits_cooperation .item .icon + *
+{
+    width: 200px;
+    max-width: calc(100% - 72px);
+    margin-left: 25px;
+
+    align-self: center;
 }
 
 

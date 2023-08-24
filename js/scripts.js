@@ -57,6 +57,44 @@ $(function(){
 	})
 
 
+	// Карусель товаров
+	$('.products .slider').owlCarousel({
+		loop: false,
+		nav: true,
+		dots: true,
+		dotsEach: true,
+		smartSpeed: 500,
+		navText: [
+			'<svg><use xlink:href="#ic_arr_left" /></svg>',
+			'<svg><use xlink:href="#ic_arr_right" /></svg>'
+		],
+		responsive: {
+	        0:{
+	            items: 1,
+				margin: 15
+	        },
+	        480:{
+	            items: 2,
+				margin: 15
+	        },
+	        768:{
+	            items: 3,
+				margin: 15
+	        },
+	        1024:{
+	            items: 4,
+				margin: 15
+	        },
+	        1180:{
+	            items: 5,
+				margin: 15
+	        }
+		},
+		onInitialized: event => productHeight($(event.target), $(event.target).find('.product').size()),
+		onResized: event => productHeight($(event.target), $(event.target).find('.product').size())
+	})
+
+
 	// Каталог продукции
 	$('body').on('click', '.cats_wall .more button', function(e) {
 	    e.preventDefault()
@@ -214,6 +252,25 @@ function articleHeight(context, step){
 
 	for( let i = 0; i < articles.length; i++ ){
 		let obj = articles.slice(start, finish).find('.name')
+
+		setHeight( obj )
+
+		start = start+step
+		finish = finish+step
+	}
+}
+
+
+// Выравнивание товаров
+function productHeight(context, step){
+	let start = 0
+	let finish = step
+	let products = context.find('.product')
+
+	products.find('.name').height('auto')
+
+	for( let i = 0; i < products.length; i++ ){
+		let obj = products.slice(start, finish).find('.name')
 
 		setHeight( obj )
 

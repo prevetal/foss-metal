@@ -380,6 +380,39 @@
 
 
 
+    .products .slider
+    {
+        padding-bottom: 52px;
+    }
+
+
+
+    .products .owl-carousel .owl-nav button.owl-prev,
+    .products .owl-carousel .owl-nav button.owl-next
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .products .owl-dots
+    {
+        bottom: 16px;
+    }
+
+    .products .owl-dots .owl-dot
+    {
+        width: 8px;
+        height: 8px;
+    }
+
+    .products .owl-dots .owl-dot + .owl-dot
+    {
+        margin-left: 8px;
+    }
+
+
+
     .products table td.price,
     .products table td.weight,
     .products table td.city
@@ -451,9 +484,84 @@
 
 
 
-    /*---------------
-        Footer
-    ---------------*/
+    /*-----------------
+       Product info
+    -----------------*/
+    .product_info .price .val
+    {
+        font-size: 20px;
+    }
+
+
+    .product_info .warehouse .val
+    {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+
+    .product_info .notice .icon + *
+    {
+        width: calc(100% - 36px);
+    }
+
+
+
+    /*------------------------
+       Product description
+    ------------------------*/
+    .product_description .block_title
+    {
+        font-size: 22px;
+
+        margin-bottom: 16px;
+    }
+
+
+
+    /*----------------------------
+       Benefits of cooperation
+    ----------------------------*/
+    .benefits_cooperation .block_title
+    {
+        font-size: 22px;
+
+        margin-bottom: 16px;
+    }
+
+
+    .benefits_cooperation .flex > *
+    {
+        width: calc(100% + 1px);
+    }
+
+
+    .benefits_cooperation .item .icon
+    {
+        width: 47px;
+        height: 47px;
+    }
+
+    .benefits_cooperation .item .icon img
+    {
+        transform: scale(1);
+    }
+
+
+    .benefits_cooperation .item .icon + *
+    {
+        max-width: calc(100% - 67px);
+        margin-left: 20px;
+    }
+
+
+
+    .documents .block_title
+    {
+        font-size: 22px;
+
+        margin-bottom: 16px;
+    }
 
 
 

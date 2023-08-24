@@ -527,6 +527,28 @@
 
 
 
+    /*-----------------
+       Product info
+    -----------------*/
+    .product_info .info
+    {
+        padding: 15px;
+    }
+
+
+
+    /*----------------------------
+       Benefits of cooperation
+    ----------------------------*/
+    .benefits_cooperation .item
+    {
+        font-size: 16px;
+
+        padding: 27px 35px;
+    }
+
+
+
     /*---------------
         Footer
     ---------------*/

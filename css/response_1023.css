@@ -810,6 +810,12 @@
 
 
 
+    .products .owl-dots .owl-dot + .owl-dot
+    {
+        margin-left: 12px;
+    }
+
+
     .products table th
     {
         font-size: 12px;
@@ -847,6 +853,12 @@
     .content .products table td.name a
     {
         width: 170px;
+    }
+
+
+    .products .product .buy_btn
+    {
+        font-size: 17px;
     }
 
 
@@ -998,6 +1010,41 @@
     .more
     {
         margin-top: 20px;
+    }
+
+
+
+    /*-----------------
+       Product info
+    -----------------*/
+    .product_info .image
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .product_info .data
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+
+    /*----------------------------
+       Benefits of cooperation
+    ----------------------------*/
+    .benefits_cooperation .flex > *
+    {
+        width: calc(50% + 1px);
+    }
+
+
+    .benefits_cooperation .item
+    {
+        padding: 23px 31px;
     }
 
 
